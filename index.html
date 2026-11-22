@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Happy Birthday Akkaley ❤️</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- BACKGROUND MUSIC -->
+    <audio id="birthdayMusic" loop>
+        <source src="music/Happy Birthday (Background Score)(MP3_160K).mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- SECTION 1: INTRO -->
+    <section id="intro" class="screen active">
+
+        <div class="stars"></div>
+
+        <p class="intro-small">A SPECIAL DAY IS WAITING...</p>
+
+        <h1>
+            Some people make<br>
+            our lives beautiful...
+        </h1>
+
+        <h2>And one of them is YOU ❤️</h2>
+
+        <button onclick="goToPassword()">
+            ENTER ✨
+        </button>
+
+    </section>
+
+
+    <!-- SECTION 2: PASSWORD -->
+    <section id="password" class="screen">
+
+        <h1>One Little Question ❤️</h1>
+
+        <p>Enter your birthday date to unlock your surprise!</p>
+
+        <input
+            type="password"
+            id="passwordInput"
+            placeholder="DDMMYYYY"
+        >
+
+        <button onclick="checkPassword()">
+            Unlock 🔐
+        </button>
+
+        <p id="errorMessage"></p>
+
+    </section>
+
+
+    <!-- SECTION 3: GIFT -->
+    <section id="gift" class="screen">
+
+        <h1>Your Surprise Is Here! 🎁</h1>
+
+        <p>Something special is waiting for you...</p>
+
+        <div class="gift-box" onclick="openGift()">
+            🎁
+        </div>
+
+        <p>Tap the gift to open it!</p>
+
+    </section>
+
+
+    <!-- SECTION 4: VIDEO -->
+    <section id="videoSection" class="screen">
+
+        <h1>A Little Surprise For You ❤️</h1>
+
+        <video id="surpriseVideo" controls playsinline>
+            <source src="videos/VN20261122_235909.mp4" type="video/mp4">
+            Your browser does not support video.
+        </video>
+
+        <button onclick="showLetter()">
+            Continue ❤️
+        </button>
+
+    </section>
+
+
+    <!-- SECTION 5: LETTER -->
+    <section id="letter" class="screen">
+
+        <h1>Dear Akkaleyyyyyyyyyy ❤️</h1>
+
+        <div class="letter-box">
+            <p id="typedLetter"></p>
+        </div>
+
+        <button onclick="showMemories()">
+            Our Memories 📸
+        </button>
+
+    </section>
+
+
+    <!-- SECTION 6: MEMORIES -->
+    <section id="memories" class="screen">
+
+        <h1>Our Beautiful Memories 📸</h1>
+
+        <p>Every picture has a special memory.</p>
+
+        <div class="gallery">
+
+            <img src="IMG-20261121-WA0006.jpg" alt="Memory 1">
+
+            <img src="images/IMG-20261121-WA0007.jpg" alt="Memory 2">
+
+            <img src="images/IMG-20261121-WA0008.jpg" alt="Memory 3">
+
+            <img src="images/IMG-20261121-WA0009.jpg" alt="Memory 4">
+
+            <img src="images/IMG-20261121-WA0010.jpg" alt="Memory 5">
+
+        </div>
+
+        <button onclick="showFinale()">
+            One Last Surprise 🎂
+        </button>
+
+    </section>
+
+
+    <!-- SECTION 7: FINAL WISH -->
+    <section id="finale" class="screen">
+
+        <div class="balloons">🎈 🎈 🎈</div>
+
+        <h1>HAPPY BIRTHDAY!</h1>
+
+        <h2>Akkaleyyyyyyyyyy ❤️</h2>
+
+        <div class="cake">🎂</div>
+
+        <p>
+            May your life always be filled with<br>
+            happiness, love and beautiful memories.
+        </p>
+
+        <h2>Lots of Love! ❤️</h2>
+
+        <div id="confetti"></div>
+
+    </section>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
